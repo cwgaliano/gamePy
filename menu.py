@@ -50,7 +50,13 @@ def menuHanged():
     
     system("clear")
     
+    print("==== ======== ======= ====")
     print("PARA RENDIRSE ESCRIBA (SI)")
+    print("==== ======== ======= ====")
+    print()
+    print("==== ======== ======= ==========")
+    print("PARA ARIESGAR ESCRIBA (ARRIESGO)")
+    print("==== ======== ======= ==========")
     print()
     print("I---------------")
     print("I              1")
@@ -63,6 +69,10 @@ def menuHanged():
     print("I")
     print("I")
     print("I")
+    
+    
+    
+    
     
     
     

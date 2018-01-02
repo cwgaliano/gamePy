@@ -33,7 +33,24 @@ def game(listWords):
             print("Palabra a adivinar es: " + str(word))
             checkword = 0
             letter = input("Ingrese letra: ").lower()
-        
+            
+            
+                        
+            if letter == "si":
+                break
+            
+            if letter == "arriesgo":
+                word = input("Escriba la palabra que piensa que es: ")
+                if word == guessWord:
+                    winner()
+                    print("Has ganado La palabra era " + str(guessWord))
+                    break
+                else:
+                    loser()
+                    print("GAME OVER" )
+                    break
+                
+            
             for indicator in range(len(guess)):
                 
                 if letter == guess[indicator]:
@@ -55,11 +72,10 @@ def game(listWords):
                 print("GAME OVER" )
                 break
                 
-            
-            if letter == "si":
-                break
+
                 
         
         
-        if "no" == input("Quiere jugar otra vez (no) o (si)"):
+        if "no" == input("Quiere jugar otra vez (no) o (si): "):
             break
+        

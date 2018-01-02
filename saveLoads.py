@@ -17,3 +17,4 @@ def load():
 		words = loads(open("listWords.json").read())
 		
 	return words
+	
